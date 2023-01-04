@@ -3,12 +3,11 @@ import { Link } from "react-router-dom";
 import useFetch from "../Hooks/useFetchHook";
 import "../style/Card.css";
 
-const Card = ({}) => {
+const Card = () => {
   const { data } = useFetch();
 
   if (data) {
     if (data.length > 0) {
-      console.log(data);
       return data.map((logement) => {
         return (
           <Link to={`/House/${logement.id}`} key={logement.id}>

@@ -7,7 +7,7 @@ export default function useFetch() {
 
   useEffect(() => {
     setIsLoading(true);
-    fetch("logements.json")
+    fetch("/logements.json")
       .then((response) => {
         if (!response.ok) {
           throw new Error(response.statusText);

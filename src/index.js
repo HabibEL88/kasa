@@ -9,7 +9,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -19,7 +19,7 @@ root.render(
       <Routes>
         <Route exact path="/" element={<App />} />
         <Route path="/about" element={<About />} />
-        <Route path="/House/:id" element={<House />} />
+        <Route path="/House/:productId" element={<House />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
