@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import useFetch from "../Hooks/useFetchHook";
 import ImageSlider from "../components/Carousel";
 import Tags from "../components/Tags";
+import Rating from "../components/Rating";
 
 // Style
 import "../style/House.css";
@@ -41,7 +42,10 @@ const House = () => {
                 <Tags tags={tags} />
               </div>
             </div>
-            <div className="rightContainer"></div>
+
+            <div className="rightContainer">
+              <Rating rating={rating} />
+            </div>
           </div>
 
           <div></div>
