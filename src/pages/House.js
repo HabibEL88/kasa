@@ -2,6 +2,9 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import useFetch from "../Hooks/useFetchHook";
 import ImageSlider from "../components/Carousel";
+import Tags from "../components/Tags";
+
+// Style
 import "../style/House.css";
 
 const House = () => {
@@ -24,14 +27,21 @@ const House = () => {
       } = logement;
 
       return (
-        <div className="Container">
+        <div className="container">
           <div className="containerStyles">
             <ImageSlider slides={pictures} />
           </div>
-          <div className="left-container">
-            <h1 className="title">{title}</h1>
-            <p className="location">{location}</p>
-            <div>tag</div>
+          <div className="infoContainer">
+            <div className="leftContainer">
+              <div>
+                <h1 className="title">{title}</h1>
+                <p className="location">{location}</p>
+              </div>
+              <div className="tagsContainer">
+                <Tags tags={tags} />
+              </div>
+            </div>
+            <div className="rightContainer"></div>
           </div>
 
           <div></div>

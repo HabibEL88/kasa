@@ -17,10 +17,6 @@ const ImageSlider = ({ slides }) => {
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
-  const goToSlide = (slideIndex) => {
-    setCurrentIndex(slideIndex);
-  };
-
   const slideStylesWidthBackground = {
     backgroundImage: `url(${slides[currentIndex]})`,
   };
