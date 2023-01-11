@@ -1,14 +1,13 @@
 import React from "react";
-import banner from "../assets/homeBanner.png";
 import "../style/Banner.css";
 
-const Section = () => {
+const Section = ({ src, text, classToAdd }) => {
   return (
-    <section className="bannerHome">
+    <section className={`bannerHome ${classToAdd ? classToAdd : ""}`}>
       <div className="bannerDiv">
-        <img src={banner} alt="Banner home" />
+        <img src={src} alt="Banner home" />
       </div>
-      <h1>Chez vous, partout et ailleurs</h1>
+      {text && <h1>Chez vous, partout et ailleurs</h1>}
     </section>
   );
 };

@@ -12,3 +12,13 @@
     color: white;
     margin: 0;
 }
+
+@media (max-width: 480px) {
+    
+    .tag {
+        display: flex;
+        align-items: center;
+        min-width: auto;
+        border-radius: 5px;
+    }
+}
