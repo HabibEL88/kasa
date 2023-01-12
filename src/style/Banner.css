@@ -35,13 +35,7 @@ section {
         height: 111px;
     }
     
-    .mobileBanner{
-        height: 300px;
-    }
-
-    .mobileBanner > .bannerDiv {
-        height: 100%;
-    }
+   
 
     .mobileBanner > .bannerDiv > img {
         height: 100%;
@@ -67,5 +61,6 @@ section {
         font-size: 29px;
         width: 280px;
         position: absolute;
+        top: 35%;
     }
 }

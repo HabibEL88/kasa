@@ -23,7 +23,7 @@
     color : #FF6060;
     font-weight: 500;
     font-size: 18px;
-    margin: 20px;
+    margin: 20px 0;
     display: flex;
     justify-content: space-between;
   }
@@ -62,14 +62,21 @@
 }
 
 
-@media (max-width: 480px) {
+.bottomContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+}
+
+
+@media (max-width: 768px) {
 
   .container {
     margin-bottom: 50px;
   }
 
   .containerStyles {
-    height: 355px;
+    height: 70vw;
     margin: 0;
   }
 
@@ -81,19 +88,13 @@
 
   .rightContainer {
     flex-direction: row-reverse;
-    gap: 20px;
+    gap: unset;
     align-items: center;
     justify-content: space-between;
   }
 
   .rating{
     height: 30px;
-   }
-
-   .bottomContainer{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
    }
 
    .dropDown_title{
@@ -116,18 +117,12 @@
     width:80px;
     text-align: right;
    }
+
+   .bottomContainer{
+    grid-template-columns: repeat(1, 1fr);   
+  }
    
 }
-/*@media (min-width: 768px) {
-  .bottomContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 40px;
-  }
-}
 
-@media (min-width: 992px) {
-  .bottomContainer {
-    column-gap: 80px;
-  }
-}*/
+
+

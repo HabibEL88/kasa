@@ -47,7 +47,20 @@
     }
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    
+    .header {
+        margin-bottom: 15px;
+    }
+
+    .navigation ul {
+        gap: 7vw;
+    }
+
+    .logo > img{
+        height: 10vw;
+    }
+}
 
 @media (max-width: 992px) {}
 
