@@ -24,12 +24,8 @@ export default function useFetch() {
       });
   }, []);
 
-  if (error) {
-    return <p>Une erreur est survenue : {error.message}</p>;
-  }
-
-  if (isLoading) {
-    return <p>Chargement en cours...</p>;
+  if (error || isLoading) {
+    return { data: [] }; // None
   }
 
   return { data };

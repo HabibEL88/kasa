@@ -6,8 +6,6 @@ import arrowDown from "../assets/chevronDown.svg";
 
 const useDropDownMenu = ({ title, content }) => {
   const [visible, setVisible] = useState(false);
-
-  console.log("here");
   return (
     <div className="dropDown">
       <div className="dropDown_title" onClick={() => setVisible(!visible)}>
